@@ -13,7 +13,7 @@ const Home = () => {
         const fetching_data = async () => {
 
             setLoad(true);
-            const api_key = `http://api.weatherapi.com/v1/current.json?key=137bb8f74c224505b55134624233004&q=${context.search === '' ? 'Lahore' : context.search}`;
+            const api_key = `https://api.weatherapi.com/v1/current.json?key=137bb8f74c224505b55134624233004&q=${context.search === '' ? 'Lahore' : context.search}`;
             console.log("going to search " + api_key);
 
             const dta = await fetch(api_key);
